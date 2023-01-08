@@ -1,0 +1,63 @@
+
+@mixin justify-width($space,$size) {
+    display: flex;
+    justify-content: $space;
+    width: 87%;
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+ ul{
+    list-style: none;
+ }
+
+.header{
+    background-color: $dark;
+
+
+ .nav{
+    @include justify-width(space-between,87% );
+     margin:  0 auto;
+     padding: {
+        top: 25%;
+        bottom: 25px;
+     }
+
+     &_logo{
+        color: $main;
+        font-size: 30px;
+
+     }
+
+     &_navbar{
+        @include justify-width(space-between,87% );
+        color:$main;
+     }
+ 
+    }
+}
+
+.container{
+    margin: 100px auto;
+    @include justify-width(space-around,87% )
+   
+   
+
+}
+
+.col{
+    width: 30%;
+    height: 200px;
+    background-color: $dark;
+}
+
+
+// scss comment
+
+/*
+ css comment
+*/
